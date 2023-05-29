@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+/* *********************************sky */
+main{
+    background-image: url(../img/sky.jpg);
+    width: 500%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    animation: sky 70s linear infinite;
+    background-repeat: repeat-x;
+}
+@keyframes sky{
+    to{
+        transform: translateX(-5000px);
+    }
+}
+/* *****************************************road */
+.road{
+    background-image: url(../img/road.jpg);
+    height: 200px;
+    width: 500%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    animation: road 12s linear infinite;
+}
+@keyframes road{
+    to{
+        transform: translateX(-5000px);
+    }
+}
+/* **************************************town */
+.town{
+    background-image: url(../img/city.png);
+    width: 500%;
+    height: 200px;
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 200px;
+    animation: town 70s infinite linear;
+}
+@keyframes town{
+    to{
+        transform: translateX(-5000px);
+    }
+}
+/* ************************************car */
+.car{
+    background-image: url(../img/background-remover/car.png);
+    width: 360px;
+    height: 150px;
+    position: absolute;
+    bottom: 100px;
+    z-index: 1;
+    animation: car 7s linear;
+}
+@keyframes car{
+    0%{
+        transform: translateX(-10000px);
+    }
+    100%{
+        transform: translateX(5000px);
+    }
+}
+.wheel1{
+    background-image: url(../img/wheel.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+    z-index: 1;
+    animation: wheel 5000s linear;
+}
+.wheel2{
+    background-image: url(../img/wheel.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    z-index: 1;
+    animation: wheel 5000s linear;
+    transition: 21s linear;
+}
+@keyframes wheel{
+    0%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(5000px);
+        transform: rotate(3600deg);
+    }
+}
