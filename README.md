@@ -2,7 +2,7 @@
 
 **A mini project by animation**
 
-- Developed by pouria farahani
+- Developed by Mahla Saburi
 
 - Created - 2023-05-30
 
