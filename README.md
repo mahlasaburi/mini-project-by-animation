@@ -1,6 +1,6 @@
 # mini-project-by-animation
 
-**A mini project by animation**
+**A mini project with animation**
 
 - Developed by Mahla Saburi
 
